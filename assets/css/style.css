@@ -1,0 +1,24 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+main { 
+    width: 500px;
+    margin: auto;
+}
+
+main div, main section {
+    background-color: lightgray;
+    margin: 10px 0;
+    padding: 10px 10px;
+}
+main form section input[type="submit"] {
+    display: block;
+    background-color: blueviolet;
+    padding: 5px 15px;
+    width: 100%;
+    color: white;
+    margin: 10px auto;
+}

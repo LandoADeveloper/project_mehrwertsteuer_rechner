@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <main>
+        <form onsubmit="return false">
+            <section>
+                <h4>Was soll berechnet werden?</h4>   
+
+                <div>
+                    <input type="radio" name="mwstDirection" id="mwstDirection1" checked onclick="checkedDirection()">
+                    <label for="mwstDirection1">Mehrwertsteuer aufschlagen (Netto zu Brutto)</label>
+                </div>
+                <div>
+                    <input type="radio" name="mwstDirection" id="mwstDirection2" onclick="checkedDirection()">
+                    <label for="mwstDirection2">Mehrwertsteuer abziehen (Brutto zu Netto)</label>
+                </div>
+            </section>
+            <section>
+
+                <h4>
+                    Mehrwertsteuersatz
+                </h4>
+                <div>
+                    <input type="radio" name="mwst" id="nineteenPercent" checked>
+                    <label for="nineteenPercent" >19 %</label>
+                    <input type="radio" name="mwst" id="sevenPercent">
+                    <label for="sevenPercent">7 %</label>
+                </div>
+            </section>
+            <section>
+                <h4 id="valDeclaration">
+                    Nettobetrag(Preis ohne Mehrwertsteuer) in Euro*
+                </h4>
+                <input type="number" name="val" id="val">
+                <input type="submit" onclick="calcMwst()" value="Berechnen">
+            </section>
+        </form>
+        <article>
+            <h3>
+                Ergebnis
+            </h3>
+            <section id="result">
+                
+            </section>
+        </article>
+    </main>
+    
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
